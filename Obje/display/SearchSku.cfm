@@ -86,7 +86,7 @@ console.table({
             var Sresult=wrk_query("SELECT * FROM STOCKS WHERE PRODUCT_CODE_2='"+v+"'","dsn3")
            console.log(Sresult)
             if(Sresult.recordcount>0){
-              var str="index.cfm?fuseaction=stock.detail_stock_popup&list_type=3&pid="+Sresult.PRODUCT_ID[0]+"&stock_id="+Sresult.STOCK_ID[0]
+              var str="index.cfm?fuseaction=stock.detail_stock_popup_pbs&list_type=3&pid="+Sresult.PRODUCT_ID[0]+"&stock_id="+Sresult.STOCK_ID[0]
                
               if(department_id.length>0){
                 str+="&cat=&list_type=3&maxrows=20&branch_id=&department_id_="+department_id+"&location_id="+location_id+"&location_name="+dpName+"&row_project_id=&row_project_head=&product_name="+Sresult.PRODUCT_NAME[0]+"&spec_main_id=&spec_name=&startdate=&finishdate=" 
