@@ -16,6 +16,7 @@
 </select>
 
 </div>
+<div id="btn1"   class="btn btn-primary">Bekleyen Siparişler</div>
 <hr>
 <div style="display:flex">
     <div style="width:50%">
@@ -48,6 +49,10 @@
 </cf_box>
 
 <script>
+function BekleyenAc(){
+  sid=el.getAttribute("data-stock_id")
+  var str="index.cfm?fuseaction=objects.popup_reserved_orders_pbs&taken=1&nosale_order_location=0&sid="+sid
+}
     function searchSKU(v,e) {
         console.log(v);
         console.log(e.keyCode)
@@ -109,12 +114,13 @@ console.table({
     1,
     "Yükleniyor"
   );
-  AjaxPageLoad(
+  /*AjaxPageLoad(
     "index.cfm?fuseaction=objects.popup_reserved_orders_pbs&taken=1&nosale_order_location=0&sid="+Sresult.STOCK_ID[0],
     "Bekleyen",
     1,
     "Yükleniyor"
-  );
+  );*/
+  document.getElementById("btn1").setAttribute("data-stock_id",Sresult.STOCK_ID[0])
   MerhabaDe()
             }
         }
