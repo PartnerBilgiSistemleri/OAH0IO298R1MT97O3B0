@@ -16,7 +16,7 @@
 </select>
 
 </div>
-<div id="btn1"   class="btn btn-primary">Bekleyen Siparişler</div>
+<div id="btn1" class="btn btn-primary" data-stock_id="" style="width: 100%;font-size: 20pt;padding-top: 10px;padding-bottom: 10px;margin-top: 5px;display:none">Bekleyen Siparişler</div>
 <hr>
 <div style="display:flex">
     <div style="width:50%">
@@ -49,7 +49,7 @@
 </cf_box>
 
 <script>
-function BekleyenAc(){
+function BekleyenAc(el){
   sid=el.getAttribute("data-stock_id")
   var str="index.cfm?fuseaction=objects.popup_reserved_orders_pbs&taken=1&nosale_order_location=0&sid="+sid
   windowopen(str,"wide")
@@ -122,6 +122,7 @@ console.table({
     "Yükleniyor"
   );*/
   document.getElementById("btn1").setAttribute("data-stock_id",Sresult.STOCK_ID[0])
+  document.getElementById("btn1").show()
   MerhabaDe()
             }
         }
