@@ -1,0 +1,131 @@
+<cf_box title="Stok Bul">
+    <div class="form-group" style="display:flex">
+<input type="text" style="font-size:25pt;width:85% !important" name="PRODUCT_CODE_2" placeholder="SKU" id="PRODUCT_CODE_2" onkeyup="searchSKU(this.value,event)">
+<select name="fmdMain" id="fmdMain" style="font-size:25pt;width:15% !important">
+  <option value="">Tüm Depolar</option>
+  <cfquery name="GETDDDD" datasource="#DSN#">
+      SELECT D.BRANCH_ID,SL.DEPARTMENT_ID,SL.LOCATION_ID,D.DEPARTMENT_HEAD,SL.COMMENT FROM catalyst_prod.STOCKS_LOCATION AS SL LEFT JOIN catalyst_prod.DEPARTMENT AS D ON SL.DEPARTMENT_ID=D.DEPARTMENT_ID ORDER BY D.DEPARTMENT_ID,LOCATION_ID
+  </cfquery>
+  <cfoutput query="GETDDDD" group="DEPARTMENT_ID">
+    <optgroup label="#DEPARTMENT_HEAD#">
+      <cfoutput>
+        <option value="#BRANCH_ID#*#DEPARTMENT_ID#*#LOCATION_ID#">#COMMENT#</option>
+      </cfoutput>
+    </optgroup>
+  </cfoutput>
+</select>
+
+</div>
+<hr>
+<div style="display:flex">
+    <div style="width:50%">
+      <div id="StokDetay" >
+
+      </div>
+      <div id="Bekleyen">
+
+      </div>
+      <div id="Alinan">
+
+      </div>
+      <div id="Verilen">
+
+      </div>
+    </div>
+    <div style="width:25%;display: flex;flex-direction: column;" >
+        <div id="Lokasyon">
+            
+        </div>
+        <div id="GraphArea">
+            
+        </div>
+    </div>
+    <div id="LotDetay" style="width:25%">
+
+    </div>
+</div>
+
+</cf_box>
+
+<script>
+    function searchSKU(v,e) {
+        console.log(v);
+        console.log(e.keyCode)
+        var dpEl=document.getElementById("fmdMain")
+var branch_id=list_getat(dpEl.value,1,"*")
+var department_id=list_getat(dpEl.value,2,"*")
+var location_id=list_getat(dpEl.value,3,"*")
+var slx=dpEl.selectedIndex
+var dpName=dpEl.options[slx].innerText
+console.table({
+    branch_id:branch_id,
+    department_id:department_id,
+    location_id:location_id,
+    dpName:dpName
+})
+      
+        if(e.keyCode==13){
+            var Sresult=wrk_query("SELECT * FROM STOCKS WHERE PRODUCT_CODE_2='"+v+"'","dsn3")
+           console.log(Sresult)
+            if(Sresult.recordcount>0){
+              var str="index.cfm?fuseaction=stock.detail_stock_popup&list_type=3&pid="+Sresult.PRODUCT_ID[0]+"&stock_id="+Sresult.STOCK_ID[0]
+               
+              if(department_id.length>0){
+                str+="&cat=&list_type=3&maxrows=20&branch_id=&department_id_="+department_id+"&location_id="+location_id+"&location_name="+dpName+"&row_project_id=&row_project_head=&product_name="+Sresult.PRODUCT_NAME[0]+"&spec_main_id=&spec_name=&startdate=&finishdate=" 
+              }
+                AjaxPageLoad(
+    str,
+    "StokDetay",
+    1,
+    "Yükleniyor"
+  );
+  AjaxPageLoad(
+    "index.cfm?fuseaction=stock.detail_store_stock_popup&product_id="+Sresult.PRODUCT_ID[0]+"&stock_id="+Sresult.STOCK_ID[0],
+    "Lokasyon",
+    1,
+    "Yükleniyor"
+  );
+  AjaxPageLoad(
+    "index.cfm?fuseaction=stock.popup_stock_graph_ajax&pid="+Sresult.PRODUCT_ID[0]+"&stock_code="+Sresult.STOCK_CODE[0],
+    "GraphArea",
+    1,
+    "Yükleniyor"
+  );
+  AjaxPageLoad(
+    "index.cfm?fuseaction=stock.emptypopup_detail_stock_lot&stock_id="+Sresult.STOCK_ID[0]+"&stock_code="+Sresult.STOCK_CODE[0],
+    "LotDetay",
+    1,
+    "Yükleniyor"
+  );
+  AjaxPageLoad(
+    "index.cfm?fuseaction=objects.popup_reserved_orders&taken=1&pid="+Sresult.PRODUCT_ID[0]+"&stock_code="+Sresult.STOCK_CODE[0],
+    "Alinan",
+    1,
+    "Yükleniyor"
+  );
+  AjaxPageLoad(
+    "index.cfm?fuseaction=objects.popup_reserved_orders&taken=0&nosale_order_location=0&pid="+Sresult.PRODUCT_ID[0],
+    "Verilen",
+    1,
+    "Yükleniyor"
+  );
+  AjaxPageLoad(
+    "index.cfm?fuseaction=objects.popup_reserved_orders_pbs&taken=1&nosale_order_location=0&sid="+Sresult.STOCK_ID[0],
+    "Bekleyen",
+    1,
+    "Yükleniyor"
+  );
+  MerhabaDe()
+            }
+        }
+
+
+    }
+
+    function MerhabaDe(params) {
+      $(".ui-form-list").remove()
+$(".ui-otherFileTitle").remove()
+$(".ui-otherFile").remove()
+}
+</script>
+

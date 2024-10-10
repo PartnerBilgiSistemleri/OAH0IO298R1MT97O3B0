@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itemAlign:itemAlignment
+  xmlns:itemAlign="http://xml.ashleyfurniture.com/xml/schemas/afItemAlign_v1.2"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:afParty="http://xml.ashleyfurniture.com/xml/schemas/afParty_v1.5"
+  xmlns:afItem="http://xml.ashleyfurniture.com/xml/schemas/afItem_v1.7"
+  xmlns:afBase="http://xml.ashleyfurniture.com/xml/schemas/afBase_v1.9"
+  xsi:schemaLocation="http://xml.ashleyfurniture.com/xml/schemas/afItemAlign_v1.2 http://xml.ashleyfurniture.com/xml/schemas/af_ItemAlign_v1.2.xsd">
+  <document id="0" status="Original" type="888" language="EN">
+    <creationDate>2022-10-19</creationDate>
+    <creationTime>00:13:14</creationTime>
+  </document>
+  <buyer>
+    <afParty:partyIdentifier partyIdentifierCode="7751800"
+      partyIdentifierQualifierCode="SenderAssigned" />
+  </buyer>
+  <seller>
+    <sellerIdentification>
+      <afParty:partyIdentifier partyIdentifierCode="052738531" partyIdentifierQualifierCode="DUNS" />
+    </sellerIdentification>
+  </seller>
+  <shipTo>
+    <afParty:partyIdentifier partyIdentifierCode="G81" partyIdentifierQualifierCode="SenderAssigned" />
+  </shipTo>
+  <items>
+    <item itemType="9" itemClass="ZBHM" retailSalesCategory="ZZ" itemGroupCode="100"
+      itemStatus="Replacement" itemIsAvailable="true" itemIsPackage="false"
+      harmonizationCode="8204110060" itemIsExpressShipEligible="false" itemStatusDate="2022-03-15"
+      itemColor="Black" itemsPerCase="5">
+      <itemIdentification>
+        <itemIdentifier itemNumber="100-1" itemNumberQualifier="SellerAssigned" />
+        <itemIdentifier itemNumber="100-1" itemNumberQualifier="BuyerAssigned" />
+        <itemIdentifier itemNumber="024052793147" itemNumberQualifier="UPC" />
+        <itemDescription descriptionValue="Replaced by 100-2"
+          itemDescriptionQualifier="SellerAssigned" itemDescriptionClassification="Product" />
+        <itemDescription descriptionValue="Replaced by 100-2"
+          itemDescriptionQualifier="SellerAssigned" itemDescriptionClassification="Friendly" />
+        <itemCharacteristics>
+          <itemUnits unitOfMeasure="Each" value="1" />
+          <itemUnitDescription>Replaced by 100-2</itemUnitDescription>
+          <itemDimensions>
+            <depth unitOfMeasure="Inches" value="6.63" />
+            <height unitOfMeasure="Inches" value="2.25" />
+            <length unitOfMeasure="Inches" value="11" />
+            <weight unitOfMeasure="Pounds" value="55" weightQualifier="NetWeight" />
+          </itemDimensions>
+        </itemCharacteristics>
+        <itemCharacteristics>
+          <itemUnits unitOfMeasure="Each" value="1" />
+          <itemUnitDescription>Replaced by 100-2</itemUnitDescription>
+          <itemDimensions>
+            <depth unitOfMeasure="Millimeters" value="168.4" />
+            <height unitOfMeasure="Millimeters" value="57.15" />
+            <length unitOfMeasure="Millimeters" value="279.4" />
+            <weight unitOfMeasure="Kilograms" value="24.95" weightQualifier="NetWeight" />
+          </itemDimensions>
+        </itemCharacteristics>
+        <packageCharacteristics>
+          <packageUnits unitOfMeasure="Case" value="1" />
+          <packageUnitDescription>Replaced by 100-2</packageUnitDescription>
+          <packageDimensions>
+            <depth unitOfMeasure="Inches" value="24.63" />
+            <height unitOfMeasure="Inches" value="10.75" />
+            <length unitOfMeasure="Inches" value="15.25" />
+            <volume unitOfMeasure="CubicFeet" value="2.34" />
+            <weight unitOfMeasure="Pounds" value="63" weightQualifier="GrossWeight" />
+          </packageDimensions>
+        </packageCharacteristics>
+        <packageCharacteristics>
+          <packageUnits unitOfMeasure="Case" value="1" />
+          <packageUnitDescription>Replaced by 100-2</packageUnitDescription>
+          <packageDimensions>
+            <depth unitOfMeasure="Millimeters" value="625.6" />
+            <height unitOfMeasure="Millimeters" value="273.05" />
+            <length unitOfMeasure="Millimeters" value="387.35" />
+            <volume unitOfMeasure="CubicMeters" value="0.07" />
+            <weight unitOfMeasure="Kilograms" value="28.58" weightQualifier="GrossWeight" />
+          </packageDimensions>
+        </packageCharacteristics>
+      </itemIdentification>
+      <itemVendor>
+        <afParty:partyIdentifier partyIdentifierCode="052738531" partyIdentifierQualifierCode="DUNS" />
+        <afParty:partyName>Ashley</afParty:partyName>
+      </itemVendor>
+      <itemPricing PriceQualifierCode="Standard">
+        <unitPrice fobPoint="ECRU">124.00</unitPrice>
+        <wholesalePriceWithoutFreight>124.00</wholesalePriceWithoutFreight>
+        <netPrice>126.48</netPrice>
+        <freightAmount freightPriceQualifier="StandardFreight">2.48</freightAmount>
+      </itemPricing>
+      <subItem>
+        <itemIdentification>
+          <itemIdentifier itemNumber="100-1H" itemNumberQualifier="SellerAssigned" />
+        </itemIdentification>
+        <itemQuantity unitOfMeasure="Each" value="5" />
+      </subItem>
+    </item>
+    <item itemType="9" itemClass="ZAHM" retailSalesCategory="ZZ" itemGroupCode="100" itemStatus="Discontinued" itemIsAvailable="false" itemIsPackage="false" itemIsExpressShipEligible="false" itemStatusDate="2019-08-06" itemColor="Multi" itemsPerCase="1">
+      <itemIdentification>
+        <itemIdentifier itemNumber="100-41" itemNumberQualifier="SellerAssigned" />
+        <itemIdentifier itemNumber="100-41" itemNumberQualifier="BuyerAssigned" />
+        <itemIdentifier itemNumber="024052274592" itemNumberQualifier="UPC" />
+        <itemDescription descriptionValue="Podium (4/CN)" itemDescriptionQualifier="SellerAssigned" itemDescriptionClassification="Product" />
+        <itemDescription descriptionValue="Podium (4/CN)" itemDescriptionQualifier="SellerAssigned" itemDescriptionClassification="Friendly" />
+        <itemCharacteristics>
+          <itemUnits unitOfMeasure="Each" value="1" />
+          <itemUnitDescription>Podium (4/CN)</itemUnitDescription>
+          <itemDimensions>
+            <depth unitOfMeasure="Inches" value="19.69" />
+            <height unitOfMeasure="Inches" value="38.58" />
+            <length unitOfMeasure="Inches" value="19.69" />
+            <weight unitOfMeasure="Pounds" value="100" weightQualifier="NetWeight" />
+          </itemDimensions>
+        </itemCharacteristics>
+        <itemCharacteristics>
+          <itemUnits unitOfMeasure="Each" value="1" />
+          <itemUnitDescription>Podium (4/CN)</itemUnitDescription>
+          <itemDimensions>
+            <depth unitOfMeasure="Millimeters" value="500" />
+            <height unitOfMeasure="Millimeters" value="980" />
+            <length unitOfMeasure="Millimeters" value="500" />
+            <weight unitOfMeasure="Kilograms" value="45.36" weightQualifier="NetWeight" />
+          </itemDimensions>
+        </itemCharacteristics>
+        <packageCharacteristics>
+          <packageUnits unitOfMeasure="Cartons" value="1" />
+          <packageUnitDescription>Podium (4/CN)</packageUnitDescription>
+          <packageDimensions>
+            <depth unitOfMeasure="Inches" value="24" />
+            <height unitOfMeasure="Inches" value="11" />
+            <length unitOfMeasure="Inches" value="46" />
+            <volume unitOfMeasure="CubicFeet" value="7" />
+            <weight unitOfMeasure="Pounds" value="107" weightQualifier="GrossWeight" />
+          </packageDimensions>
+        </packageCharacteristics>
+        <packageCharacteristics>
+          <packageUnits unitOfMeasure="Cartons" value="1" />
+          <packageUnitDescription>Podium (4/CN)</packageUnitDescription>
+          <packageDimensions>
+            <depth unitOfMeasure="Millimeters" value="609.6" />
+            <height unitOfMeasure="Millimeters" value="279.4" />
+            <length unitOfMeasure="Millimeters" value="1168.4" />
+            <volume unitOfMeasure="CubicMeters" value="0.2" />
+            <weight unitOfMeasure="Kilograms" value="48.53" weightQualifier="GrossWeight" />
+          </packageDimensions>
+        </packageCharacteristics>
+      </itemIdentification>
+      <itemVendor>
+        <afParty:partyIdentifier partyIdentifierCode="052738531" partyIdentifierQualifierCode="DUNS" />
+        <afParty:partyName>Ashley</afParty:partyName>
+      </itemVendor>
+      <itemPricing PriceQualifierCode="Standard">
+        <unitPrice fobPoint="ECRU">126.99</unitPrice>
+        <wholesalePriceWithoutFreight>126.99</wholesalePriceWithoutFreight>
+        <netPrice>129.53</netPrice>
+        <freightAmount freightPriceQualifier="StandardFreight">2.54</freightAmount>
+      </itemPricing>
+      <image quality="MediumResolution" name="100-41_BIG.jpg" url="100-41_BIG.jpg" />
+      <referenceDocument url="https://www.ashleydirect.com/GraphicsVault/Assembly_Instr/170480.pdf" name="170480.pdf" referenceDocumentQualifier="AssemblyInstructions" />
+    </item>
+    <item itemType="9" itemClass="ZVMA" retailSalesCategory="DA" itemGroupCode="A3000030" itemStatus="Active" itemIsAvailable="true" itemIsPackage="false" harmonizationCode="9401614011" seatCount="1" itemIsExpressShipEligible="true" itemStatusDate="2018-01-23" itemColor="Brown" itemsPerCase="1">
+      <itemIdentification>
+        <itemIdentifier itemNumber="A3000030" itemNumberQualifier="SellerAssigned" />
+        <itemIdentifier itemNumber="A3000030" itemNumberQualifier="BuyerAssigned" />
+        <itemIdentifier itemNumber="024052441253" itemNumberQualifier="UPC" />
+        <itemDescription descriptionValue="Accent Chair" itemDescriptionQualifier="SellerAssigned" itemDescriptionClassification="Product" />
+        <itemDescription descriptionValue="Accent Chair" itemDescriptionQualifier="SellerAssigned" itemDescriptionClassification="Friendly" />
+        <itemCharacteristics>
+          <itemUnits unitOfMeasure="Each" value="1" />
+          <itemUnitDescription>Accent Chair</itemUnitDescription>
+          <itemDimensions>
+            <depth unitOfMeasure="Inches" value="26.5" />
+            <height unitOfMeasure="Inches" value="34" />
+            <length unitOfMeasure="Inches" value="28.25" />
+            <weight unitOfMeasure="Pounds" value="31" weightQualifier="NetWeight" />
+          </itemDimensions>
+        </itemCharacteristics>
+        <itemCharacteristics>
+          <itemUnits unitOfMeasure="Each" value="1" />
+          <itemUnitDescription>Accent Chair</itemUnitDescription>
+          <itemDimensions>
+            <depth unitOfMeasure="Millimeters" value="673.1" />
+            <height unitOfMeasure="Millimeters" value="863.6" />
+            <length unitOfMeasure="Millimeters" value="717.55" />
+            <weight unitOfMeasure="Kilograms" value="14.06" weightQualifier="NetWeight" />
+          </itemDimensions>
+        </itemCharacteristics>
+        <packageCharacteristics>
+          <packageUnits unitOfMeasure="Each" value="1" />
+          <packageUnitDescription>Accent Chair</packageUnitDescription>
+          <packageDimensions>
+            <depth unitOfMeasure="Inches" value="29.13" />
+            <height unitOfMeasure="Inches" value="25.5" />
+            <length unitOfMeasure="Inches" value="29.75" />
+            <volume unitOfMeasure="CubicFeet" value="12.79" />
+            <weight unitOfMeasure="Pounds" value="42" weightQualifier="GrossWeight" />
+          </packageDimensions>
+        </packageCharacteristics>
+        <packageCharacteristics>
+          <packageUnits unitOfMeasure="Each" value="1" />
+          <packageUnitDescription>Accent Chair</packageUnitDescription>
+          <packageDimensions>
+            <depth unitOfMeasure="Millimeters" value="739.9" />
+            <height unitOfMeasure="Millimeters" value="647.7" />
+            <length unitOfMeasure="Millimeters" value="755.65" />
+            <volume unitOfMeasure="CubicMeters" value="0.36" />
+            <weight unitOfMeasure="Kilograms" value="19.05" weightQualifier="GrossWeight" />
+          </packageDimensions>
+        </packageCharacteristics>
+      </itemIdentification>
+      <itemVendor>
+        <afParty:partyIdentifier partyIdentifierCode="052738531" partyIdentifierQualifierCode="DUNS" />
+        <afParty:partyName>Ashley</afParty:partyName>
+      </itemVendor>
+      <itemPricing PriceQualifierCode="Standard">
+        <unitPrice fobPoint="ECRU">240.00</unitPrice>
+        <wholesalePriceWithoutFreight>225.72</wholesalePriceWithoutFreight>
+        <netPrice>230.52</netPrice>
+        <freightAmount freightPriceQualifier="StandardFreight">4.80</freightAmount>
+        <discountAmount>12.00</discountAmount>
+        <dfiDiscountAmount>2.28</dfiDiscountAmount>
+      </itemPricing>
+      <image quality="MediumResolution" name="A3000030_BIG.jpg" url="A3000030_BIG.jpg" />
+      <referenceDocument url="https://www.ashleydirect.com/GraphicsVault/Assembly_Instr/A3000030_AIS2.pdf" name="A3000030_AIS2.pdf" referenceDocumentQualifier="AssemblyInstructions" />
+      <referenceDocument url="https://www.ashleydirect.com/GraphicsVault/Parts_Drawing/A3000030_RPDF.pdf" name="A3000030_RPDF.pdf" referenceDocumentQualifier="PartsDrawing" />
+      <coverInformation>
+        <coverName>POLYESTER 100 (0)</coverName>
+        <coverLocation>Body</coverLocation>
+        <coverContent>Polyester (1.00)</coverContent>
+        <coverCleaningCode>SW</coverCleaningCode>
+      </coverInformation>
+      <itemFeatures>
+        <itemFeature id="1">Attached back and seat cushions</itemFeature>
+        <itemFeature id="2">Nailhead trim</itemFeature>
+        <itemFeature id="3">Polyester upholstery</itemFeature>
+        <itemFeature id="4">Exposed frame in faux wood finish</itemFeature>
+      </itemFeatures>
+      <itemFluffs>
+        <itemFluff id="1">This modestly scaled accent chair is a chic design feat. Perfect for a corner spot or entryway, this curvaceous beauty sports a distressed finished frame and taupe-tone upholstery for an easy-on-the-eyes sensibility. Nailhead trim punctuating the front and back adds so much cool attitude.</itemFluff>
+      </itemFluffs>
+      <itemExtraDimensions>
+        <itemExtraDimension>
+          <standardDimension>Seat width: 22.5 in</standardDimension>
+          <metricDimension>Seat width: 571.5 mm</metricDimension>
+        </itemExtraDimension>
+        <itemExtraDimension>
+          <standardDimension>Seat depth: 20.75 in</standardDimension>
+          <metricDimension>Seat depth: 527.05 mm</metricDimension>
+        </itemExtraDimension>
+        <itemExtraDimension>
+          <standardDimension>Seat height: 18.75 in</standardDimension>
+          <metricDimension>Seat height: 476.25 mm</metricDimension>
+        </itemExtraDimension>
+        <itemExtraDimension>
+          <standardDimension>Arm height: 26 in</standardDimension>
+          <metricDimension>Arm height: 660.4 mm</metricDimension>
+        </itemExtraDimension>
+        <itemExtraDimension>
+          <standardDimension>Distance between arms: 22.75 in</standardDimension>
+          <metricDimension>Distance between arms: 577.85 mm</metricDimension>
+        </itemExtraDimension>
+      </itemExtraDimensions>
+    </item>
+  </items>
+  <systemReference>
+    <systemReferenceDescription>ItemMasterType</systemReferenceDescription>
+    <systemReferenceValue>full</systemReferenceValue>
+  </systemReference>
+</itemAlign:itemAlignment>
