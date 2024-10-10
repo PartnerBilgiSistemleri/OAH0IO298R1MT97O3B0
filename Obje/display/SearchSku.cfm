@@ -39,12 +39,13 @@
         <div id="Lokasyon">
             
         </div>
-        <div id="GraphArea">
-            
-        </div>
+        
     </div>
     <div id="LotDetay" style="width:25%">
 
+    </div>
+    <div id="GraphArea">
+            
     </div>
 </div>
 
