@@ -19,6 +19,30 @@
 <div id="btn1" onclick="BekleyenAc(this)" class="btn btn-primary" data-stock_id="" style="width: 100%;font-size: 20pt;padding-top: 10px;padding-bottom: 10px;margin-top: 5px;display:none">Bekleyen Siparişler</div>
 <div id="btn2" onclick="AlinanAc(this)" class="btn btn-success" data-stock_id="" style="width: 100%;font-size: 20pt;padding-top: 10px;padding-bottom: 10px;margin-top: 5px;display:none">Alınan Siparişler</div>
 <div id="btn3" onclick="BeklenenAc(this)" class="btn btn-warning" data-stock_id="" style="width: 100%;font-size: 20pt;padding-top: 10px;padding-bottom: 10px;margin-top: 5px;display:none">Beklenen Siparişler</div>
+<div >
+  <table class="table">
+      <tr>
+        <th>
+          Depo
+        </th>
+        <th>
+          Bekleyen
+        </th>
+        <th>
+          Satılabilir
+        </th>
+        <th>
+          Beklenen
+        </th>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+      </tr>
+  </table>
+</div>
 <hr>
 <div style="display:flex">
     <div style="width:50%">
