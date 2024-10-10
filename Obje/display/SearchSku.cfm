@@ -93,7 +93,7 @@ console.table({
       
         if(e.keyCode==13){
             var Sresult=wrk_query("SELECT * FROM STOCKS WHERE PRODUCT_CODE_2='"+v+"'","dsn3")
-            var DepoBakiye=wrk_query("SELECT SUM(ISNULL(STOCK_IN,0)-ISNULL(STOCK_OUT,0)) AS B FROM STOCKS_ROW WHERE STORE="+department_id+" AND STORE_LOCATION="+location_id+" AND STOCK_ID="+Sresult.STOCK_ID[0])
+            var DepoBakiye=wrk_query("SELECT SUM(ISNULL(STOCK_IN,0)-ISNULL(STOCK_OUT,0)) AS B FROM STOCKS_ROW WHERE STORE="+department_id+" AND STORE_LOCATION="+location_id+" AND STOCK_ID="+Sresult.STOCK_ID[0],"dsn2")
            console.log(Sresult)
            console.log(DepoBakiye)
             if(Sresult.recordcount>0){
