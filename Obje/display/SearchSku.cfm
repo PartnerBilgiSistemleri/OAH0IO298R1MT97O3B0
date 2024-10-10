@@ -41,12 +41,14 @@
         </div>
         
     </div>
-    <div id="LotDetay" style="width:25%">
+    <div style="width:25%;display: flex;flex-direction: column;" >
+    <div id="LotDetay">
 
     </div>
     <div id="GraphArea">
             
     </div>
+  </div>
 </div>
 
 </cf_box>
