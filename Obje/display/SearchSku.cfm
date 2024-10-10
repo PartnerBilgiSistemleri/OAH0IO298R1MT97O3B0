@@ -122,7 +122,7 @@ console.table({
     "Yükleniyor"
   );*/
   document.getElementById("btn1").setAttribute("data-stock_id",Sresult.STOCK_ID[0])
-  document.getElementById("btn1").show()
+  $("#btn1").show()
   MerhabaDe()
             }
         }
