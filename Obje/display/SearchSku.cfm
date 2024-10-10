@@ -18,6 +18,7 @@
 </div>
 <div id="btn1" onclick="BekleyenAc(this)" class="btn btn-primary" data-stock_id="" style="width: 100%;font-size: 20pt;padding-top: 10px;padding-bottom: 10px;margin-top: 5px;display:none">Bekleyen Siparişler</div>
 <div id="btn2" onclick="AlinanAc(this)" class="btn btn-success" data-stock_id="" style="width: 100%;font-size: 20pt;padding-top: 10px;padding-bottom: 10px;margin-top: 5px;display:none">Alınan Siparişler</div>
+<div id="btn3" onclick="BeklenenAc(this)" class="btn btn-warning" data-stock_id="" style="width: 100%;font-size: 20pt;padding-top: 10px;padding-bottom: 10px;margin-top: 5px;display:none">Beklenen Siparişler</div>
 <hr>
 <div style="display:flex">
     <div style="width:50%">
@@ -58,6 +59,11 @@ function BekleyenAc(el){
 function AlinanAc(el){
   sid=el.getAttribute("data-stock_id")
   var str="index.cfm?fuseaction=objects.popup_reserved_orders&taken=1&nosale_order_location=0&sid="+sid
+  windowopen(str,"wide")
+}
+function BeklenenAc(el){
+  sid=el.getAttribute("data-stock_id")
+  var str="index.cfm?fuseaction=objects.popup_reserved_orders&taken=0&nosale_order_location=0&pid="+sid
   windowopen(str,"wide")
 }
     function searchSKU(v,e) {
@@ -115,12 +121,12 @@ console.table({
   //   1,
   //   "Yükleniyor"
   // );
-  AjaxPageLoad(
-    "index.cfm?fuseaction=objects.popup_reserved_orders&taken=0&nosale_order_location=0&pid="+Sresult.PRODUCT_ID[0],
-    "Verilen",
-    1,
-    "Yükleniyor"
-  );
+  // AjaxPageLoad(
+  //   "index.cfm?fuseaction=objects.popup_reserved_orders&taken=0&nosale_order_location=0&pid="+Sresult.PRODUCT_ID[0],
+  //   "Verilen",
+  //   1,
+  //   "Yükleniyor"
+  // );
   /*AjaxPageLoad(
     "index.cfm?fuseaction=objects.popup_reserved_orders_pbs&taken=1&nosale_order_location=0&sid="+Sresult.STOCK_ID[0],
     "Bekleyen",
@@ -129,8 +135,10 @@ console.table({
   );*/
   document.getElementById("btn1").setAttribute("data-stock_id",Sresult.STOCK_ID[0])
   document.getElementById("btn2").setAttribute("data-stock_id",Sresult.STOCK_ID[0])
+  document.getElementById("btn3").setAttribute("data-stock_id",Sresult.STOCK_ID[0])
   $("#btn1").show()
   $("#btn2").show()
+  $("#btn3").show()
   MerhabaDe()
             }
         }
