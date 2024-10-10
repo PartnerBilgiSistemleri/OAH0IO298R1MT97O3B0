@@ -19,29 +19,11 @@
 <div id="btn1" onclick="BekleyenAc(this)" class="btn btn-primary" data-stock_id="" style="width: 100%;font-size: 20pt;padding-top: 10px;padding-bottom: 10px;margin-top: 5px;display:none">Bekleyen Siparişler</div>
 <div id="btn2" onclick="AlinanAc(this)" class="btn btn-success" data-stock_id="" style="width: 100%;font-size: 20pt;padding-top: 10px;padding-bottom: 10px;margin-top: 5px;display:none">Alınan Siparişler</div>
 <div id="btn3" onclick="BeklenenAc(this)" class="btn btn-warning" data-stock_id="" style="width: 100%;font-size: 20pt;padding-top: 10px;padding-bottom: 10px;margin-top: 5px;display:none">Beklenen Siparişler</div>
-<div >
-  <table class="table">
-      <tr>
-        <th>
-          Depo
-        </th>
-        <th>
-          Bekleyen
-        </th>
-        <th>
-          Satılabilir
-        </th>
-        <th>
-          Beklenen
-        </th>
-      </tr>
-      <tr>
-        <td>10</td>
-        <td>20</td>
-        <td>30</td>
-        <td>40</td>
-      </tr>
-  </table>
+<div style="display: flex;margin-top: 10px;">
+  <div class="btn btn-primary" style="width: 100%;font-size: 20pt;padding-top: 10px;padding-bottom: 10px;margin-top: 5px;margin-right: 1px;"><b style="float: left;">Depo :</b> <span id="depo_mik" style="float: right;"></span></div>    
+  <div class="btn btn-danger" style="width: 100%;font-size: 20pt;padding-top: 10px;padding-bottom: 10px;margin-top: 5px;margin-right: 1px;"><b style="float: left;">Bekleyen:</b> <span id="bekleyen" style="float: right;"></span></div>
+  <div class="btn btn-success" style="width: 100%;font-size: 20pt;padding-top: 10px;padding-bottom: 10px;margin-top: 5px;margin-right: 1px;"><b style="float: left;">Satılabilir:</b> <span id="satilabilir" style="float: right;"></span></div>
+  <div class="btn btn-warning" style="width: 100%;font-size: 20pt;padding-top: 10px;padding-bottom: 10px;margin-top: 5px;"><b style="float: left;">Beklenen:</b> <span id="beklenen" style="float: right;"> </span></div>
 </div>
 <hr>
 <div style="display:flex">
