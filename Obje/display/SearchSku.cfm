@@ -52,6 +52,7 @@
 function BekleyenAc(){
   sid=el.getAttribute("data-stock_id")
   var str="index.cfm?fuseaction=objects.popup_reserved_orders_pbs&taken=1&nosale_order_location=0&sid="+sid
+  windowopen(str,"wide")
 }
     function searchSKU(v,e) {
         console.log(v);
