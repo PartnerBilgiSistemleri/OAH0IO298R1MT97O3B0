@@ -16,7 +16,7 @@
 </select>
 
 </div>
-<div id="btn1" class="btn btn-primary" data-stock_id="" style="width: 100%;font-size: 20pt;padding-top: 10px;padding-bottom: 10px;margin-top: 5px;display:none">Bekleyen Siparişler</div>
+<div id="btn1" onclick="BekleyenAc(this)" class="btn btn-primary" data-stock_id="" style="width: 100%;font-size: 20pt;padding-top: 10px;padding-bottom: 10px;margin-top: 5px;display:none">Bekleyen Siparişler</div>
 <hr>
 <div style="display:flex">
     <div style="width:50%">
